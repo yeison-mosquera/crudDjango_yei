@@ -10,3 +10,5 @@ python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
 python manage.py migrate
+
+poetry run gunicorn django_crud_api_yei.wsgi:application
